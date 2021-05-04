@@ -14,6 +14,7 @@ When using this Lambda function as an action for AWS IoT Rules, The event is a J
 ## Deploy this stack
 
 ```bash
+cd cdk
 npm install
 npm run build
 cdk deploy --parameters kafkaTopic=<kafkatopic> --parameters kafkaServers=<the kafka bootstrap servers>  --parameters vpcId=<vpc id of MSK> --parameters subnetIds=<subnetId1,subnetId2,... of MSK>
